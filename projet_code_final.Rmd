@@ -5,6 +5,7 @@ date: "2025-11-10"
 output: 
   pdf_document:
     toc: true
+    latex_engine: xelatex
   html_document:
     toc: true
 editor_options: 
@@ -275,7 +276,7 @@ dim(data_without_low_var)
 
 En supprimant les variables de faible variance et les variables avec une
 corrélation supérieure à 0.9, on obtient un data set contenant 104
-variables.
+variables.\
 
 ```{r}
 write.csv(data_without_low_var, "data_without_correlated_var_90_without_low_variance.csv", row.names = FALSE)
@@ -371,6 +372,7 @@ converti préalablement la colonne Y en variable catégorielle et on a
 standardisé les variables non catégorielles.
 
 ```{r}
+library(glmnet)
 cv_ridge_pred = cv.glmnet(X_train,Y_train, family="multinomial", nfolds=10, alpha=0)#0 ridge
 
 plot(cv_ridge_pred, main="Ridge cross validation")
@@ -1085,16 +1087,6 @@ cat("Striat:",length(vars_kept_striat),"variables retenues\n")
 ```
 
 ### e- SVM après avoir divisé le data set en fonction des parties du cerveau et appliqué SVM à chaque partie
-```{r}
-```
-
-
-```{r}
-```
-
-
-```{r}
-```
 
 ```{r}
 run_svm <- function(X_train, X_test, x_kept, Y_train, Y_test) {
