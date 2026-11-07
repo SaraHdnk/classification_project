@@ -1,4 +1,4 @@
-# Projet MRR : prédiction de troubles psychiatriques à partir de données génétiques et cliniques
+# Projet : prédiction de troubles psychiatriques à partir de données génétiques et cliniques
 
 ## Objectif
 
