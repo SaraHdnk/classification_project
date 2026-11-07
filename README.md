@@ -83,13 +83,13 @@ Un modèle Elastic Net est entraîné sur chaque sous-ensemble. La performance g
 
 $$\overline{Accuracy} = \sum_{k=1}^{K} w_k \cdot Accuracy_k$$
 
-- Accuracy moyenne pondérée : _à compléter_
+- Accuracy moyenne pondérée : 0.64
 
 ### 5. Division du jeu de données par tissu + Elastic Net + SVM
 
 Même découpage que la méthode 4. Les variables sélectionnées par chaque Elastic Net servent ensuite à entraîner un **SVM** sur chaque sous-ensemble.
 
-- Accuracy moyenne pondérée : _à compléter_
+- Accuracy moyenne pondérée : 0.30
 
 ## Résultats
 
