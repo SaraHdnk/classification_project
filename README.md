@@ -67,7 +67,7 @@ Résultat : meilleure accuracy de **0,634** pour **α = 0,87**, avec une précis
 
 ### 3. ACP + régression logistique sans pénalisation
 
-- Réduction de dimension par analyse en composantes principales (ACP)
+- Réduction de dimension avec le PCA
 - Conservation des **50 premières composantes principales**
 - Accuracy : **0,463**
 
@@ -97,7 +97,7 @@ Même découpage que la méthode 4. Les variables sélectionnées par chaque Ela
 |---|---|
 | Régression logistique sans pénalisation | 0,366 |
 | Elastic Net (α = 0,87) | 0,634 |
-| ACP (50 composantes) + régression logistique | 0,463 |
+| PCA (50 composantes) + régression logistique | 0,463 |
 | **Division par tissu + Elastic Net** | 0.64 |
 | Division par tissu + Elastic Net + SVM | 0.30 |
 
